@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Parameter](https://github.com/Boostorg/Parameter) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Parameter%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Parameter%3Abincrafters).
 
 ## For Users: Use this package
 
