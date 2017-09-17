@@ -2,21 +2,21 @@ from conans import ConanFile, tools, os
 
 class BoostParameterConan(ConanFile):
     name = "Boost.Parameter"
-    version = "1.64.0"
+    version = "1.65.1"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-parameter"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["parameter"]
-    requires =  "Boost.Config/1.64.0@bincrafters/testing", \
-                      "Boost.Core/1.64.0@bincrafters/testing", \
-                      "Boost.Detail/1.64.0@bincrafters/testing", \
-                      "Boost.Mpl/1.64.0@bincrafters/testing", \
-                      "Boost.Optional/1.64.0@bincrafters/testing", \
-                      "Boost.Preprocessor/1.64.0@bincrafters/testing", \
-                      "Boost.Python/1.64.0@bincrafters/testing", \
-                      "Boost.Type_Traits/1.64.0@bincrafters/testing", \
-                      "Boost.Utility/1.64.0@bincrafters/testing"
+    requires =  "Boost.Config/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Detail/1.65.1@bincrafters/testing", \
+                      "Boost.Mpl/1.65.1@bincrafters/testing", \
+                      "Boost.Optional/1.65.1@bincrafters/testing", \
+                      "Boost.Preprocessor/1.65.1@bincrafters/testing", \
+                      "Boost.Python/1.65.1@bincrafters/testing", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
+                      "Boost.Utility/1.65.1@bincrafters/testing"
 
                       #config0 core2 detail5 mpl5 optional5 preprocessor0 python9 type_traits3 utility5
 
