@@ -8,7 +8,8 @@ class BoostParameterConan(ConanFile):
     name = "boost_parameter"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_parameter"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["parameter"]
     is_header_only = True
 
