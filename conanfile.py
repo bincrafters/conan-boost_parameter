@@ -23,7 +23,6 @@ class BoostParameterConan(ConanFile):
         "boost_optional/1.67.0@bincrafters/testing",
         "boost_package_tools/1.67.0@bincrafters/testing",
         "boost_preprocessor/1.67.0@bincrafters/testing",
-        "boost_python/1.67.0@bincrafters/testing",
         "boost_type_traits/1.67.0@bincrafters/testing",
         "boost_utility/1.67.0@bincrafters/testing"
     )
