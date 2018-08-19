@@ -12,7 +12,9 @@ class BoostParameterConan(ConanFile):
     exports = ["LICENSE.md"]
     lib_short_names = ["parameter"]
     is_header_only = True
-
+    options = {"python" : [True,False]}
+    default_options = "python=True"
+    
     def package_id_additional(self):
         self.info.header_only()
     
@@ -24,7 +26,6 @@ class BoostParameterConan(ConanFile):
         "boost_mpl/1.66.0@bincrafters/stable",
         "boost_optional/1.66.0@bincrafters/stable",
         "boost_preprocessor/1.66.0@bincrafters/stable",
-        "boost_python/1.66.0@bincrafters/stable",
         "boost_type_traits/1.66.0@bincrafters/stable",
         "boost_utility/1.66.0@bincrafters/stable"
     )
@@ -36,6 +37,10 @@ class BoostParameterConan(ConanFile):
     short_paths = True
     build_requires = "boost_generator/1.66.0@bincrafters/stable"
 
+    def configure(self):
+        if self.options.python:
+            self.requires("boost_python/1.66.0@bincrafters/stable")
+    
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
 
