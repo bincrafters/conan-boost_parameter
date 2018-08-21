@@ -31,7 +31,7 @@ class BoostParameterConan(ConanFile):
     default_options = "with_boost_python=False"
     
     def configure(self):
-        if self.options.python:
+        if self.options.with_boost_python:
             self.requires("boost_python/1.67.0@bincrafters/stable")
     
     # BEGIN
