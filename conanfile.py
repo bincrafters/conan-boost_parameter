@@ -27,6 +27,13 @@ class BoostParameterConan(ConanFile):
         "boost_utility/1.67.0@bincrafters/testing"
     )
 
+    options = {"with_boost_python" : [True,False]}
+    default_options = "with_boost_python=False"
+    
+    def configure(self):
+        if self.options.python:
+            self.requires("boost_python/1.67.0@bincrafters/stable")
+    
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost_parameter"
