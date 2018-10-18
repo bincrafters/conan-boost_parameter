@@ -24,7 +24,7 @@ class BoostParameterConan(base.BoostBaseConan):
         "boost_utility"
     ]
     
-    def configure(self):
+    def requirements_additional(self):
         if self.options.with_boost_python:
             self.requires("boost_python/1.67.0@bincrafters/stable")
             
