@@ -20,7 +20,6 @@ class BoostParameterConan(base.BoostBaseConan):
         "boost_mpl",
         "boost_optional",
         "boost_preprocessor",
-        "boost_python",
         "boost_type_traits",
         "boost_utility"
     ]
